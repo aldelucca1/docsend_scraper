@@ -16,7 +16,7 @@ new Vue({
       this.email = null;
     },
     connectSocket() {
-      connection = new WebSocket('ws://localhost:8080/api/status?owner=' + this.email);
+      connection = new WebSocket('ws://' + window.location.hostname + ':8080/api/status?owner=' + this.email);
       connection.onopen = () => {
         console.log('WebSocket connected');
       };
