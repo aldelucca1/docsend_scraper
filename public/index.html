@@ -103,7 +103,7 @@
             <h4 class="modal-title">Generate PDF</h4>
           </div>
           <form @submit.prevent="generate" role="form">
-            <input type="hidden" name="owner" value="test@example.com">
+            <input type="hidden" name="owner" value="{{ email }}">
             <div class="modal-body">
               <div class="form-group">
                 <label for="source_url">Document URL</label>
